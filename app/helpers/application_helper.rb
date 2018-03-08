@@ -12,4 +12,9 @@ module ApplicationHelper
 	def sample_helper
 		content_tag :div, "My Content", class: "my-class"
 	end	
+
+	def copyright_generator
+		TlmViewTool::Renderer.copyright 'Tom Lewis', 'All Rights reserved'
+	end
+
 end
