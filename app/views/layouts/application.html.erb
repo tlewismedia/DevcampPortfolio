@@ -2,12 +2,13 @@
 <html>
   <head>
     <title><%= @page_title %></title>
-    <%= csrf_meta_tags %>
 
-    <meta name="keywords" content="<%= @seo_keywords %>" />
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= csrf_meta_tags %>
+    <meta name="keywords" content="<%= @seo_keywords %>" />
+
   </head>
 
   <body>
@@ -17,7 +18,7 @@
     <%= render "shared/nav", location: 'top' %>
 
     <%= login_helper %>
-    
+
     <%= yield %>
 
     <%=  copyright_generator %>
