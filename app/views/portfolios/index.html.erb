@@ -2,4 +2,10 @@
 
 <%= link_to "Create New Item", new_portfolio_path %>
 
-<%= render partial: 'portfolio_item', collection: @portfolio_items %>  
+<div class="album py-5 bg-light">
+  <div class="container">
+    <div class="row">
+      <%= render partial: 'portfolio_item', collection: @portfolio_items %>
+    </div>
+  </div>
+</div>  
